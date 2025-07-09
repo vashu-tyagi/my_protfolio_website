@@ -1,3 +1,4 @@
+/* Universal Box-Sizing and Font Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -16,6 +18,7 @@ body {
     flex-direction: column;
 }
 
+/* Main Container for overall content width */
 .main-container {
     max-width: 1300px;
     margin: 0 auto;
@@ -25,6 +28,7 @@ body {
 
 /* HEADER SECTION */
 
+/* Navbar Container */
 .navbar {
     display: flex;
     justify-content: center;
@@ -39,6 +43,7 @@ body {
     z-index: 999;
 }
 
+/* Navbar Inner Container */
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -48,6 +53,7 @@ body {
     max-width: 1600px;
 }
 
+/* Navbar Logo/Name Styling */
 .navbar-logo {
     font-size: 2rem;
     font-weight: 600;
@@ -57,10 +63,12 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Navbar Logo Hover Effect */
 .navbar-logo:hover {
     color: #ff8383;
 }
 
+/* Navbar Menu List */
 .navbar-container .navbar-menu {
     display: flex;
     text-align: center;
@@ -68,6 +76,7 @@ body {
     list-style: none;
 }
 
+/* Navbar Menu Links */
 .navbar-container .navbar-menu li a {
     text-decoration: none;
     color: #fff;
@@ -80,12 +89,13 @@ body {
     transition: border 0.3s ease, color 0.3s ease;
 }
 
+/* Navbar Menu Links Hover Effect */
 .navbar-container .navbar-menu li a:hover {
     border: 2px solid #ff8383;
     color: #ff8383;
 }
 
-/* SECTION TITLES (previously .title) */
+/* SECTION TITLES */
 .section-title {
     display: flex;
     justify-content: center;
@@ -105,7 +115,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Generic Section Card Styles - Removed fixed height for flexibility */
+/* Generic Section Card Styles */
 .section-card {
     width: 100%;
     height: auto;
@@ -114,6 +124,7 @@ body {
     padding: 20px 0;
 }
 
+/* Section Content Inner Wrapper */
 .section-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -122,6 +133,7 @@ body {
 
 /* HOME SECTION */
 
+/* Home Content Layout Wrapper */
 .home-content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -131,6 +143,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Introduction Text Container */
 .intro-text {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -139,20 +152,24 @@ body {
     min-width: 300px;
 }
 
+/* Profile Picture Styling */
 .profile-pic {
     height: 400px;
     width: 400px;
     border-radius: 50%;
     object-fit: cover;
+    padding: 3px;
     border: 5px solid #d13abd;
     box-shadow: 0 0 30px rgba(209, 59, 189, 0.5);
     transition: transform 0.3s ease;
 }
 
+/* Profile Picture Hover Effect */
 .profile-pic:hover {
     transform: scale(1.03);
 }
 
+/* "Hi, I'm Vashu Tyagi" Text Styling */
 #text-1 {
     font-size: 70px;
     background: linear-gradient(45deg, #eebd89, #d13abd);
@@ -163,12 +180,13 @@ body {
     text-transform: capitalize;
 }
 
+/* Introduction Paragraph Text */
 #text-2 {
     font-size: 24px;
     margin-bottom: 25px;
 }
 
-/* Primary Button for Download Resume */
+/* Primary Button (Download Resume) */
 .primary-btn {
     font-size: 16px;
     position: relative;
@@ -183,11 +201,13 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Primary Button Hover Effect */
 .primary-btn:hover {
     box-shadow: 0 0.6em 1.2em rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
 
+/* Link inside Primary Button */
 .primary-btn .btn-link {
     text-decoration: none;
     font-size: 20px;
@@ -199,6 +219,7 @@ body {
     z-index: 2;
 }
 
+/* Border effect for Primary Button */
 .primary-btn .border {
     position: absolute;
     top: 50%;
@@ -214,6 +235,7 @@ body {
     opacity: 0;
 }
 
+/* Primary Button Border Hover Effect */
 .primary-btn:hover .border {
     transform: translate(-50%, -50%) scale(0.98);
     opacity: 1;
@@ -222,6 +244,7 @@ body {
 
 /* ABOUT ME SECTION */
 
+/* About Me Description Box */
 .about-me-description {
     border: #7cf6ff solid 3px;
     border-radius: 30px;
@@ -236,6 +259,7 @@ body {
     max-width: 900px;
 }
 
+/* Sub-section Titles (e.g., Education) */
 .subsection-title {
     display: flex;
     justify-content: center;
@@ -252,6 +276,7 @@ body {
     font-size: 1.8rem;
 }
 
+/* Container for Degree Boxes */
 .degree-container {
     display: flex;
     justify-content: center;
@@ -260,6 +285,7 @@ body {
     gap: 30px;
 }
 
+/* Individual Degree Box Styling */
 .degree-box {
     border: #fff solid 1px;
     padding: 25px;
@@ -277,12 +303,14 @@ body {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
+/* Degree Box Hover Effect */
 .degree-box:hover {
     transform: translateY(-5px);
     border-color: #7cf6ff;
     /* Highlight on hover */
 }
 
+/* Degree Name Text */
 .degree-name {
     font-size: 25px;
     color: aqua;
@@ -290,6 +318,7 @@ body {
     margin-bottom: 7px;
 }
 
+/* University, CGPA, College Name Text */
 .university-name,
 .cgpa,
 .college-name {
@@ -297,18 +326,21 @@ body {
     margin-bottom: 5px;
 }
 
+/* College Link Styling */
 .college-link {
     text-decoration: none;
     color: #7cf6ff;
     transition: color 0.3s ease;
 }
 
+/* College Link Hover Effect */
 .college-link:hover {
     color: #ff8383;
 }
 
 /* PROJECT SECTION */
 
+/* Grid for Projects */
 .project-grid {
     display: flex;
     flex-wrap: wrap;
@@ -318,6 +350,7 @@ body {
     margin: 40px 0;
 }
 
+/* Individual Project Card Styling */
 .project-card {
     border: #ff8383 solid 2px;
     padding: 25px;
@@ -336,13 +369,14 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Project Card Hover Effect */
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
+/* Project Image Styling */
 .project-image {
-    /* Renamed #project-img to .project-image */
     width: 100%;
     height: 180px;
     /* Fixed height for consistent image size */
@@ -356,10 +390,9 @@ body {
     /* Adjusted margin */
 }
 
+/* Project Title Styling */
 .project-title {
-    /* Renamed #project-title to .project-title */
     background: linear-gradient(42deg, #55d2f1, #ff4c4c);
-    /* Keeps your gradient */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -374,9 +407,8 @@ body {
     /* Subtle separator */
 }
 
-
+/* Project Description Text */
 .project-description {
-    /* Renamed #project-description to .project-description */
     font-size: 15px;
     color: #e0e0e0;
     /* Slightly lighter text for readability */
@@ -388,8 +420,8 @@ body {
     /* Allows description to take up available space, pushing button down */
 }
 
+/* Project Button Styling */
 .project-btn {
-    /* Renamed #project-btn to .project-btn */
     cursor: pointer;
     margin: 10px 10%;
     /* Center the button, reduced horizontal margin */
@@ -412,6 +444,7 @@ body {
     /* Make button width relative to its parent */
 }
 
+/* Project Button Hover Effect */
 .project-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 43, 43, 0.5);
@@ -419,8 +452,8 @@ body {
     border-color: #ff2b2b;
 }
 
+/* Project Skills Tags Container */
 .project-skills {
-    /* New class for skills tags */
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -428,6 +461,7 @@ body {
     justify-content: center;
 }
 
+/* Individual Project Skill Tag Styling */
 .project-skills span {
     background-color: rgba(85, 210, 241, 0.1);
     /* Light blue transparent background */
@@ -439,9 +473,9 @@ body {
     border: 1px solid #7cf6ff;
 }
 
-/* CONTACT ME SECTION - Professional Styling */
+/* CONTACT ME SECTION */
 
-/* The main container for the contact section, similar to your cards */
+/* Main container for the contact section */
 .contact-links-container {
     display: flex;
     flex-direction: column;
@@ -462,6 +496,7 @@ body {
     /* Subtle blue border */
 }
 
+/* Contact Section Introduction Text */
 .contact-intro {
     color: #f0f0f0;
     /* Light text for intro */
@@ -472,7 +507,7 @@ body {
     /* Limit width for readability */
 }
 
-/* Grid for the contact items - Adjusted for single line/wrapping */
+/* Grid for the contact items */
 .contact-grid {
     display: flex;
     /* Use flexbox for horizontal layout */
@@ -491,6 +526,7 @@ body {
     /* Allow items to wrap to the next line on smaller screens */
 }
 
+/* Individual Contact Item Styling */
 .contact-item {
     background: rgba(85, 210, 241, 0.1);
     /* Subtle blue background for each item */
@@ -516,6 +552,7 @@ body {
     /* Include padding and border in the element's total width and height */
 }
 
+/* Contact Item Hover Effect */
 .contact-item:hover {
     transform: translateY(-5px);
     /* Lift effect on hover */
@@ -523,6 +560,7 @@ body {
     /* Slightly brighter blue on hover */
 }
 
+/* Icon within Contact Item (using Font Awesome class, not present in your HTML but useful for future) */
 .contact-item .icon {
     font-size: 2.5em;
     /* Larger icons */
@@ -532,11 +570,13 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Contact Item Icon Hover Effect (if using Font Awesome) */
 .contact-item:hover .icon {
     color: #fff;
     /* White icon on hover */
 }
 
+/* Contact Label (e.g., Email:, LinkedIn:) */
 .contact-label {
     color: #f0f0f0;
     /* Light text for label */
@@ -545,6 +585,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Contact Link Styling */
 .contact-link {
     color: #a0e0ff;
     /* Slightly lighter blue for links */
@@ -555,12 +596,14 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Contact Link Hover Effect */
 .contact-link:hover {
     color: #fff;
     /* White on hover */
     text-decoration: underline;
 }
 
+/* Logo Image within Contact Item (mail, linkedin, instagram) */
 .logo {
     height: auto;
     width: 50px;
@@ -581,6 +624,7 @@ footer {
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 
+/* Styles for screens up to 1024px wide */
 @media (max-width: 1024px) {
     .home-content-wrapper {
         flex-direction: column;
@@ -620,6 +664,7 @@ footer {
     }
 }
 
+/* Styles for screens up to 768px wide */
 @media (max-width: 768px) {
     .navbar-container {
         flex-direction: column;
@@ -662,7 +707,7 @@ footer {
         margin-right: 5%;
     }
 
-    /* Contact Section Media Query */
+    /* Contact Section adjustments for smaller screens */
     .contact-grid {
         flex-direction: column;
         /* Stack items vertically on smaller screens */
@@ -683,6 +728,7 @@ footer {
     }
 }
 
+/* Styles for screens up to 480px wide */
 @media (max-width: 480px) {
     .home-content-wrapper {
         padding: 60px 0;
