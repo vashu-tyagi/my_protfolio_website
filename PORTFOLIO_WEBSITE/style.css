@@ -162,6 +162,8 @@ body {
     border: 5px solid #d13abd;
     box-shadow: 0 0 30px rgba(209, 59, 189, 0.5);
     transition: transform 0.3s ease;
+    background-color: #fff;
+    padding: 6px;
 }
 
 /* Profile Picture Hover Effect */
